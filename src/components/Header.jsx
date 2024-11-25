@@ -26,7 +26,7 @@ const Header = () => {
         <nav className="hidden md:block mr-4">
           <ul className="flex space-x-8">
             <li> 
-              <Link to="/profile" className="hover:text-gray-800">Profile</Link>
+              <Link to="/" className="hover:text-gray-800">Profile</Link>
             </li>
             <li>
             <Link to="/experience" className="hover:text-gray-800">Experience</Link>
@@ -64,7 +64,7 @@ const Header = () => {
         <div className="md:hidden bg-[#93C5FD] text-white py-4 mr-4">
           <ul className="space-y-4">
             <li>
-              <a href="/profile" className="block hover:text-gray-800" onClick={closeMenu}>Profile</a>
+              <a href="/" className="block hover:text-gray-800" onClick={closeMenu}>Profile</a>
             </li>
             <li>
               <a href="/experience" className="block hover:text-gray-800" onClick={closeMenu}>Experience</a>
@@ -77,7 +77,7 @@ const Header = () => {
       )}
     </header>
     <Routes>
-        <Route path="/profile" element={<Profile />} />
+        <Route path="/" element={<Profile />} />
         <Route path="/experience" element={<Experience />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<h1>404 - Page Not Found</h1>} />
